@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exemple de transition CSS</title>
+    <style>
+      .texte {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+      
+      .conteneur:hover .texte {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conteneur">
+      <p>Survolez ce texte pour faire apparaître du texte caché :</p>
+      <p class="texte">Voici le texte qui apparaît.</p>
+    </div>
+  </body>
+</html>
